@@ -3,11 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:dotCell"
              xmlns:Views="clr-namespace:dotCell.Views"
+             xmlns:SheetViews="clr-namespace:dotCell.Views.Sheets"
              xmlns:ViewModels="clr-namespace:dotCell.ViewModels"
-             StartupUri="Views/MainWindowView.xaml">
+             xmlns:SheetViewModels="clr-namespace:dotCell.ViewModels.Sheets">
+    <!--StartupUri="ViewModels/MainWindowViewModel"-->
     <Application.Resources>
-        <!--<DataTemplate DataType="{x:Type ViewModels:MainWindowViewModel}">
+        <DataTemplate DataType="{x:Type ViewModels:MainWindowViewModel}">
             <Views:MainWindowView />
-        </DataTemplate>-->
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type SheetViewModels:CellViewModel}">
+            <SheetViews:CellView />
+        </DataTemplate>
     </Application.Resources>
 </Application>
