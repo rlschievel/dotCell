@@ -6,7 +6,5 @@
         xmlns:local="clr-namespace:dotCell.Views"
         mc:Ignorable="d"
         Title="dotCell" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    <ContentControl Content="{Binding CellGrid}" HorizontalAlignment="Left" VerticalAlignment="Top"/>
 </Window>
